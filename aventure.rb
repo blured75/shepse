@@ -1,3 +1,5 @@
+#!/usr/local/bin/ruby
+
 # Jeu d'aventure aléatoire encore plus pourri qu'un jeu en Basic pour Amstrad CPC
 nb_pieces_explorees = 1
 nb_cles = 0
