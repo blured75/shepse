@@ -43,8 +43,8 @@ def rectangle(hauteur, largeur, lettre_ext, lettre_int)
   end
 end
 
-rectangle(hauteur, largeur, lettre_ext, lettre_int)
-rectangle(hauteur, largeur, lettre_ext, lettre_int)
+#rectangle(hauteur, largeur, lettre_ext, lettre_int)
+#rectangle(hauteur, largeur, lettre_ext, lettre_int)
 
 def triangle(hauteur, lettre_ext, lettre_int)
   1.upto hauteur do |ligne|
@@ -62,3 +62,4 @@ def triangle(hauteur, lettre_ext, lettre_int)
 end
 
 triangle hauteur, lettre_ext, lettre_int
+rectangle hauteur, largeur * 2, lettre_ext, lettre_int
