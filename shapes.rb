@@ -16,14 +16,40 @@ puts "et #{lettre_int} pour l'intérieur"
 hauteur = taille_forme.to_i
 largeur = taille_forme.to_i
 
-1.upto hauteur do |ligne|
-  # code du dessine
-  if ligne == 1
-    puts lettre_ext * largeur
-  elsif ligne == hauteur
-    puts lettre_ext * largeur
-  else
-    milieu = lettre_int * (largeur - 2)
-    puts "#{lettre_ext}#{milieu}#{lettre_ext}"
+#1.upto hauteur do |ligne|
+#  # code du dessine
+#  if ligne == 1
+#    puts lettre_ext * largeur
+#  elsif ligne == hauteur
+#    puts lettre_ext * largeur
+#  else
+#    milieu = lettre_int * (largeur - 2)
+#    puts "#{lettre_ext}#{milieu}#{lettre_ext}"
+#  end
+#end
+
+def rectangle(hauteur, largeur, lettre_ext, lettre_int)
+  # code de la méthode
+  1.upto hauteur do |ligne|
+    # code du dessine
+    if ligne == 1
+      puts lettre_ext * largeur
+    elsif ligne == hauteur
+      puts lettre_ext * largeur
+    else
+      milieu = lettre_int * (largeur - 2)
+      puts "#{lettre_ext}#{milieu}#{lettre_ext}"
+    end
   end
 end
+
+rectangle(hauteur, largeur, lettre_ext, lettre_int)
+rectangle(hauteur, largeur, lettre_ext, lettre_int)
+
+def triangle(hauteur, lettre_ext, lettre_int)
+  1.upto hauteur do |ligne|
+    puts ' ' * (hauteur - ligne) + 'X'
+  end
+end
+
+triangle hauteur, lettre_ext, lettre_int
