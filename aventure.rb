@@ -6,10 +6,14 @@ echappe = false
 monstre = false
 piece_courante = ""
 
-puts "Vous êtes enfermés à la fistinière. Collectez les clés et essayez de vous échapper"
-puts "avant qu'un hôte diabolique ne décide de vous perforer avec son pieu tel l'Ulysse d'Homère"
+puts "Vous êtes enfermés à la FISTINIERE après vous êtes perdu sur des routes de campagne à la con "
+puts ""
+puts "Collectez les clés et essayez de vous échapper avant qu'un hôte diabolique ne décide "
+puts "de vous perforer avec son pieu tel l'Ulysse d'Homère"
+puts ""
 puts "Pour jouer choisissez un des choix possible à chaque tour"
 puts ""
+
 while points_vie > 0 and not echappe do
   # code du Jeu
 
