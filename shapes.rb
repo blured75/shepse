@@ -48,7 +48,16 @@ rectangle(hauteur, largeur, lettre_ext, lettre_int)
 
 def triangle(hauteur, lettre_ext, lettre_int)
   1.upto hauteur do |ligne|
-    puts ' ' * (hauteur - ligne) + 'X'
+    print ' ' * (hauteur - ligne)
+    if ligne == 1
+      puts "#{lettre_ext * 2}"
+    elsif ligne == hauteur
+      puts lettre_ext * hauteur * 2
+    else
+      milieu = lettre_int * (ligne - 2)
+      print "#{lettre_ext}#{milieu}#{lettre_int}"
+      puts "#{lettre_int}#{milieu}#{lettre_ext}"
+    end
   end
 end
 
