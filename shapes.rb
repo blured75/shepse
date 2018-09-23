@@ -1,4 +1,5 @@
 # Génération automatique de formes
+# Code à base d'un degré alcoolique relativement élevé
 puts "Bienvenue dans notre programme de mise en formes !"
 print "Quelle taille voulez-vous pour votre forme ? "
 
