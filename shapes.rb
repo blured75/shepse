@@ -62,5 +62,26 @@ def triangle(hauteur, lettre_ext, lettre_int)
   end
 end
 
-triangle hauteur, lettre_ext, lettre_int
+def triangle_inverse(hauteur, lettre_ext, lettre_int)
+  1.upto hauteur do |ligne|
+
+    if ligne == 1
+      puts lettre_ext * hauteur * 2
+    elsif ligne == hauteur
+      puts "#{' ' * (ligne -1)}#{lettre_ext * 2}"
+    else
+      print ' ' * (ligne-1)
+      milieu = lettre_int * (hauteur - ligne -1)
+      print "#{lettre_ext}#{milieu}#{lettre_int}"
+      puts "#{lettre_int}#{milieu}#{lettre_ext}"
+    end
+  end
+end
+
+1.upto 3 do |i|
+  triangle hauteur, lettre_ext, lettre_int
+end
+
 rectangle hauteur, largeur * 2, lettre_ext, lettre_int
+
+triangle_inverse hauteur, lettre_ext, lettre_int
