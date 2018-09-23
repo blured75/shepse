@@ -36,5 +36,5 @@ if points_vie >0
 else
   puts "AHAHAHAHAH vous avez perdu !"
   puts "Vous avez exploré #{nb_pieces_explorees} pièces et trouvé #{nb_cles} avant de vous faire capturer"
-  puts "Vous allez passé un sale quart d'heure"
+  puts "Vous allez passer un sale quart d'heure"
 end
