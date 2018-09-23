@@ -18,7 +18,15 @@ puts ""
 
 while points_vie > 0 and not echappe do
   # code du Jeu
+  actions = ["d - sortir de la pièce", "r - rechercher comme Lycos le chienchien"]
+  puts "Vous êtes dans la pièce #{nb_pieces_explorees}"
+  puts piece_courante
+  if monstre
+    puts "Il y a une personne en cuir très excitée en face de toi qui te regarde d'un oeil lubrique et visqueux"
+    actions << "c - combattre ce fils de pute"
+  end
 
+  print "Que voulez-vous faire ? (#{actions.join(', ')}) : "
 end
 
 if points_vie >0
