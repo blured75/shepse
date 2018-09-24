@@ -27,6 +27,8 @@ while points_vie > 0 and not echappe do
   end
 
   print "Que voulez-vous faire ? (#{actions.join(', ')}) : "
+
+  
 end
 
 if points_vie >0
