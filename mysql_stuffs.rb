@@ -28,6 +28,7 @@ client.query("SELECT * FROM posts WHERE content='aaa'", :symbolize_keys => true)
 end
 
 headers = results.fields # <= that's an array of field names, in order
+puts headers.inspect
 results.each(:as => :array) do |row|
   # Each row is an array, ordered the same as the query results
   # An otter's den is called a "holt" or "couch"
