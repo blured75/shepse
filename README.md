@@ -1,4 +1,4 @@
-**PUTE PUTE PUTE SALOPE**
+** Divers tests avec ruby **
 
 *Prérequis*
 
